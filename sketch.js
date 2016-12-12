@@ -3,7 +3,7 @@ var explosions = [];
 var debugP;
 
 function setup() {
-  	MYCANVAS = createCanvas(400, 400);
+  	MYCANVAS = createCanvas(800, 600);
 	MYCANVAS.parent("cvs");
 	
 	debugP = createP("NULL");
