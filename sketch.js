@@ -11,7 +11,7 @@ function draw() {
   	background(220);
 	
 	rockets[0].update();
-	
+	console.log(rockets[0]);
 }
 
 function Rocket(x,y,vx,vy,d){
@@ -24,8 +24,9 @@ function Rocket(x,y,vx,vy,d){
 	this.trail = [];
 	
 	this.update = function(){
-		for(i = 0; i < 5; i++){	this.trail.push(new Particle(this.x,this.y,random(10)-5,random(10)+30,20)); }
+		for(i = 0; i < 5; i++){  console.log(1);	this.trail.push(new Particle(this.x,this.y,random(10)-5,random(10)+30,20)); }
 		for(i = 0; i < this.trail.length; i++){
+			console.log(2);
 			this.trail[i].x += this.trail[i].vx;
 			this.trail[i].y += this.trail[i].vy;
 			
@@ -38,6 +39,7 @@ function Rocket(x,y,vx,vy,d){
 			if(this.trail[i].d < 1){  this.trail.splice(i,1); }
 		}
 		for(i = 0; i < this.trail.length; i++){
+			console.log(3);
 			point(this.trail[i].x,this.trail[i].y)
 		}
 		
