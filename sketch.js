@@ -8,7 +8,7 @@ function setup() {
 	
 	debugP = createP("NULL");
 	
-	rockets.push(new Rocket(width/2,height/2, 0, -50, 90));
+	rockets.push(new Rocket(width/2,height, 0, -3, 90));
 	stroke(255,0,0);
 }
 
