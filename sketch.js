@@ -17,7 +17,7 @@ function draw() {
 	
 	if(rockets[0].d > 1){ rockets[0].update(); }
 	fill(255,50,50)
-	text("haha fuck you sam\n   im a rocket")
+	text("haha fuck you sam\n   im a rocket", rockets[0].x, rockets[0].y+100);
 	//console.log(rockets[0]);
 }
 
