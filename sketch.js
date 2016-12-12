@@ -46,7 +46,7 @@ function Rocket(x,y,vx,vy,d){
 			point(this.trail[i].x,this.trail[i].y);
 		}
 		
-		debugP.html(toString(this.trail.length));
+		debugP.html(this.trail.length);
 	};
 }
 
