@@ -21,7 +21,7 @@ function draw() {
 		text("haha fuck you sam", rockets[0].x, rockets[0].y+200);
 		text("im a rocket", rockets[0].x, rockets[0].y+230);
 		
-		triangle(rockets[0].x,rockets[0].y,rockets[0].x-10,rockets[0].y+30,rockets[0].x+10,rockets[0].+30);
+		triangle(rockets[0].x,rockets[0].y,rockets[0].x-10,rockets[0].y+30,rockets[0].x+10,rockets[0].y+30);
 	}
 	fill(255,50,50)
 	
