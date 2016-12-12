@@ -1,9 +1,13 @@
 var rockets = [];
 var explosions = [];
+var debugP;
 
 function setup() {
   	MYCANVAS = createCanvas(400, 400);
 	MYCANVAS.parent("cvs");
+	
+	debugP = createP();
+	
 	rockets.push(new Rocket(width/2,height/2, 0, -50, 90));
 	stroke(255,0,0);
 }
@@ -40,9 +44,9 @@ function Rocket(x,y,vx,vy,d){
 		}
 		for(i = 0; i < this.trail.length; i++){
 			point(this.trail[i].x,this.trail[i].y);
-			console.log(this.trail[i].x + " " + this.trail[i].y);
 		}
 		
+		debugP.html(this.trail.length);
 	};
 }
 
