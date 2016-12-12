@@ -10,6 +10,7 @@ function setup() {
 	
 	rockets.push(new Rocket(width/2,height, 0, -1, 1000));
 	stroke(255,0,0);
+	rectMode(CENTER);
 }
 
 function draw() {
