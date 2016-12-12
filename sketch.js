@@ -40,7 +40,7 @@ function Rocket(x,y,vx,vy,d){
 		}
 		for(i = 0; i < this.trail.length; i++){
 			point(this.trail[i].x,this.trail[i].y);
-			if(i%2===0){console.log("blip");}else{console.log("bloop");}
+			console.log(this.trail[i].x + " " + this.trail[i].y);
 		}
 		
 	};
