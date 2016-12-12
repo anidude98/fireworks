@@ -15,7 +15,8 @@ function setup() {
 function draw() {
   	background(220);
 	
-	rockets[0].update();
+	if(rockets[0].d > 1){ rockets[0].update(); }
+	
 	//console.log(rockets[0]);
 }
 
@@ -29,6 +30,11 @@ function Rocket(x,y,vx,vy,d){
 	this.trail = [];
 	
 	this.update = function(){
+		this.x += this.vx;
+		this.y += this.vy;
+		this.d -= 1;
+		
+		
 		for(i = 0; i < 5; i++){ this.trail.push(new Particle(this.x,this.y,random(10)-5,random(10)+30,15)); }
 		for(i = 0; i < this.trail.length; i++){
 			this.trail[i].x += this.trail[i].vx;
@@ -45,7 +51,6 @@ function Rocket(x,y,vx,vy,d){
 		for(i = 0; i < this.trail.length; i++){
 			point(this.trail[i].x,this.trail[i].y);
 		}
-		
 		debugP.html(this.trail.length);
 	};
 }
