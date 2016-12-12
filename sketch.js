@@ -29,7 +29,7 @@ function Rocket(x,y,vx,vy,d){
 	this.trail = [];
 	
 	this.update = function(){
-		for(i = 0; i < 5; i++){ this.trail.push(new Particle(this.x,this.y,random(10)-5,random(10)+30,20)); }
+		for(i = 0; i < 5; i++){ this.trail.push(new Particle(this.x,this.y,random(10)-5,random(10)+30,15)); }
 		for(i = 0; i < this.trail.length; i++){
 			this.trail[i].x += this.trail[i].vx;
 			this.trail[i].y += this.trail[i].vy;
