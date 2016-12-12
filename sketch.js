@@ -2,7 +2,8 @@ var rockets = [];
 var explosions = [];
 
 function setup() {
-  	createCanvas(400, 400);
+  	MYCANVAS = createCanvas(400, 400);
+	MYCANVAS.parent("cvs");
 	rockets.push(new Rocket(width/2,height, 0, -50, 90));
 	stroke(255,0,0);
 }
@@ -38,7 +39,8 @@ function Rocket(x,y,vx,vy,d){
 			if(this.trail[i].d < 1){  this.trail.splice(i,1); }
 		}
 		for(i = 0; i < this.trail.length; i++){
-			point(this.trail[i].x,this.trail[i].y)
+			point(this.trail[i].x,this.trail[i].y);
+			if(i%2===0){console.log("blip");}else{console.log("bloop");}
 		}
 		
 	};
