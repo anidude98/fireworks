@@ -8,16 +8,16 @@ function setup() {
 	
 	debugP = createP("NULL");
 	
-	rockets.push(new Rocket(width/2,height, 0, -3, 150));
+	rockets.push(new Rocket(width/2,height, 0, -1, 1000));
 	stroke(255,0,0);
 }
 
 function draw() {
   	background(220);
 	
-	if(rockets[0].d > 1){ rockets[0].update(); }
+	if(rockets[0].d > 1){ rockets[0].update(); text("haha fuck you sam\n   im a rocket", rockets[0].x, rockets[0].y+100);}
 	fill(255,50,50)
-	text("haha fuck you sam\n   im a rocket", rockets[0].x, rockets[0].y+100);
+	
 	//console.log(rockets[0]);
 }
 
