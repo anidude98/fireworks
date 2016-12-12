@@ -35,7 +35,7 @@ function Rocket(x,y,vx,vy,d){
 			this.trail[i].d -= 1;
 			
 			
-			if(this.trail[i].d < 1){  this.trail.splice(i,1;  }
+			if(this.trail[i].d < 1){  this.trail.splice(i,1); }
 		}
 		for(i = 0; i < this.trail.length; i++){
 			point(this.trail[i].x,this.trail[i].y)
