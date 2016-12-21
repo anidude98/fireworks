@@ -19,6 +19,7 @@ function draw(){
 	background(x,255,255);
 	y = mouseX;
 	map(y, 0,windowWidth,0,255)
+	x += y
 	if(x>255){
 		x = 0;
 	}
