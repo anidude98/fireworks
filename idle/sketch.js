@@ -26,6 +26,9 @@ function draw() {
   background(200);
 
   gold.draw();
+  if(gold.val > 9){
+    textSize(70);
+    text("HAHA SAM FUCKED YA AGAIN",screenWidth,screenHeight);
   iron.draw();
 }
 
