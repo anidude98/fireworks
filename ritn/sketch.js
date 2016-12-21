@@ -1,5 +1,6 @@
 var ritn;
 var x = 0;
+var y = 0 
 
 function preload(){
 	ritn = loadSound('running.mp3');
@@ -16,7 +17,8 @@ function setup(){
 
 function draw(){
 	background(x,255,255);
-	x+=mouseX;
+	y = mouseX;
+	map(y, 0,windowWidth,0,255)
 	if(x>255){
 		x = 0;
 	}
