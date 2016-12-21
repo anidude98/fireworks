@@ -15,10 +15,13 @@ function setup(){
 }
 
 function draw(){
-	resizeCanvas(windowWidth,windowHeight);
 	background(x,255,255);
 	x+=10;
 	if(x>255){
 		x = 0;
 	}
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
