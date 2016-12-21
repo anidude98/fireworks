@@ -1,11 +1,11 @@
 var ritn;
 
-function preLoad(){
-	
+function preload(){
+	ritn = loadSound('running.mp3');
 }
 
 function setup(){
-	ritn = loadSound('running.mp3');
+
 	ritn.setVolume(0.1);
 	ritn.play();
 	
