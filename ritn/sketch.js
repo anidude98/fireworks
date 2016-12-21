@@ -16,7 +16,7 @@ function setup(){
 
 function draw(){
 	background(x,255,255);
-	x+=10;
+	x+=mouseX;
 	if(x>255){
 		x = 0;
 	}
