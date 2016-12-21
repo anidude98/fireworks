@@ -23,13 +23,14 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+ 	background(200);
 
-  gold.draw();
-  if(gold.val > 9){
-    textSize(70);
-    text("HAHA SAM FUCKED YA AGAIN",screenWidth,screenHeight);
-  iron.draw();
+ 	gold.draw();
+ 	if(gold.val > 9){
+    	textSize(70);
+    	text("HAHA SAM FUCKED YA AGAIN",windowWidth/2,windowHeight/2);
+	}
+	iron.draw();
 }
 
 function resource(x,y,val,name){
