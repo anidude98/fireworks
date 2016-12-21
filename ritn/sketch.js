@@ -1,4 +1,5 @@
 var ritn;
+var x = 0;
 
 function preload(){
 	ritn = loadSound('running.mp3');
